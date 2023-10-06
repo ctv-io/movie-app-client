@@ -9,7 +9,9 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "next/core-web-vitals",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -20,6 +22,12 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "linebreak-style" : "off",
-    "@typescript-eslint/indent": "off"
+    "@typescript-eslint/indent": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
