@@ -6,7 +6,7 @@ export default function HeroSection() {
 			<h2 className="text-center text-5xl font-bold">The Movie Matcher</h2>
 			<form
 				action="post"
-				className="flex w-64 flex-col items-center justify-center gap-5 lg:w-[28rem]"
+				className="flex w-64 flex-col items-center justify-center gap-2 lg:w-[28rem]"
 			>
 				<div className="form-control w-full max-w-md">
 					<label htmlFor="mainName" className="label flex flex-col items-start">
