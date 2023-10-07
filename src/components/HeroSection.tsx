@@ -9,14 +9,15 @@ export default function HeroSection() {
 				className="flex w-64 flex-col items-center justify-center gap-5 lg:w-[28rem]"
 			>
 				<div className="form-control w-full max-w-md">
-					<label htmlFor="name" className="label">
+					<label htmlFor="mainName" className="label flex flex-col items-start">
 						<span className="label-text">Nome</span>
+						<input
+							type="text"
+							id="mainName"
+							placeholder="Type here"
+							className="input input-bordered w-full max-w-md"
+						/>
 					</label>
-					<input
-						type="text"
-						placeholder="Type here"
-						className="input input-bordered w-full max-w-md"
-					/>
 				</div>
 				<button
 					type="button"
