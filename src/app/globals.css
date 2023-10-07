@@ -18,6 +18,6 @@ a {
 
 * {
   box-sizing: border-box;
-  /* linha abaixo está sendo usada para debuggar o css, favor nao apagar */
+  /* The line below is commonly used to debug css, please leave it here */
   /* outline: 1px solid red !important; */
 }
