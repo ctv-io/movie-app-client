@@ -11,6 +11,7 @@ export default function Home() {
       {users.map((user) => {
         return <div key={user}>{user}</div>;
       })}
+      <div>teste pull request</div>
     </main>
   );
 }
