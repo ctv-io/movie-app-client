@@ -17,7 +17,13 @@ export default function SocketContextProviderComponent({
     SocketReducer,
     defaultScoketContextState,
   );
-  const socket = useSocket('ws://localhost:3001', {
+  // if dev use localhost, if prod use server
+  const url =
+    process.env.NODE_ENV === 'development'
+      ? 'ws://localhost:3001'
+      : 'ws://movie-app-server.up.railway.app';
+
+  const socket = useSocket(url, {
     reconnectionAttempts: 5,
     reconnectionDelay: 5000,
     autoConnect: false,
