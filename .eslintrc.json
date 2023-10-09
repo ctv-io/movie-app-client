@@ -23,6 +23,8 @@
     "react/react-in-jsx-scope": "off",
     "linebreak-style" : "off",
     "@typescript-eslint/indent": "off",
+    "no-console": "off",
+    "react-hooks/exhaustive-deps": "off",
     "prettier/prettier": [
       "error",
       {
