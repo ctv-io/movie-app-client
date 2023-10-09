@@ -1,16 +1,18 @@
 'use client';
 
+import MainPageHeroSection from '@/components/MainPageHeroSection';
+import NavBar from '@/components/NavBar';
+
 import SocketContext from '@/utils/contexts/SocketContext/Context';
 import { useContext } from 'react';
 
 export default function Home() {
-  const { users } = useContext(SocketContext).SocketState;
-  return (
-    <main className="flex flex-col">
-      <h1 className="text-3xl font-bold">Users</h1>
-      {users.map((user) => {
-        return <div key={user}>{user}</div>;
-      })}
-    </main>
-  );
+	const { users } = useContext(SocketContext).SocketState;
+	console.log(users);
+	return (
+		<main className="flex min-h-screen flex-col items-center justify-between bg-zinc-900 p-24">
+			<NavBar />
+			<MainPageHeroSection />
+		</main>
+	);
 }

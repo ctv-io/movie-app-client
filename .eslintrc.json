@@ -9,8 +9,8 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "next/core-web-vitals",
-    "prettier",
     "plugin:react/recommended",
+    "prettier",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -21,6 +21,8 @@
   "plugins": ["react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "linebreak-style" : "off",
+    "@typescript-eslint/indent": "off",
     "no-console": "off",
     "react-hooks/exhaustive-deps": "off",
     "prettier/prettier": [
