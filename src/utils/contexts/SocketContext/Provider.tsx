@@ -21,7 +21,7 @@ export default function SocketContextProviderComponent({
   const url =
     process.env.NODE_ENV === 'development'
       ? 'ws://localhost:3001'
-      : 'ws://movie-app-server.up.railway.app';
+      : 'wss://movie-app-server.up.railway.app';
 
   const socket = useSocket(url, {
     reconnectionAttempts: 5,
