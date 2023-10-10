@@ -1,6 +1,7 @@
+import ISessionButton from '@/interfaces/ISessionButton';
 import React from 'react';
 
-export default function SessionButton({ isPlayers }: boolean) {
+export default function SessionButton({ isPlayers }: ISessionButton) {
 	if (!isPlayers) {
 		return (
 			<button
