@@ -10,10 +10,10 @@ export default function ShareLinkInput({ placeholderLink }: IShareLinkInput) {
 			<span>Link Para sua sala</span>
 			<div className="join w-full">
 				<input
-					className="input join-item input-bordered w-full disabled:border-zinc-700 disabled:bg-zinc-900 disabled:placeholder:text-zinc-200"
+					className="input join-item input-bordered w-full cursor-pointer select-text border-zinc-700 bg-zinc-900 placeholder:text-zinc-200 focus:outline-none"
 					id="shareLink"
-					disabled
-					placeholder={placeholderLink}
+					value={placeholderLink}
+					readOnly
 				/>
 				<ShareLinkButton placeholderLink={placeholderLink} />
 			</div>
