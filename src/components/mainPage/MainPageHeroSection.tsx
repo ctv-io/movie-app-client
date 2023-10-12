@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleTitle from './SimpleTitle';
+import SimpleTitle from '../SimpleTitle';
 
 export default function HeroSection() {
 	return (

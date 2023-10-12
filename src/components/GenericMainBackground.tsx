@@ -7,7 +7,7 @@ export default function GenericMainBackground({
 	children: React.ReactNode;
 }) {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center gap-10 bg-zinc-900 p-24">
+		<main className="flex min-h-screen flex-col items-center justify-center gap-10 bg-zinc-900 p-5 lg:p-24">
 			<NavBar />
 			{children}
 		</main>
