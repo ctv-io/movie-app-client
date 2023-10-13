@@ -7,7 +7,7 @@ export default function ToggleButton() {
 				htmlFor="toggleUnanimity"
 				className="label flex cursor-pointer items-start justify-start gap-2"
 			>
-				<span className="label-text text-white">Modo Unanimidade</span>
+				<span className="label-text text-zinc-200">Modo Unanimidade</span>
 				<input
 					type="checkbox"
 					id="toggleUnanimity"

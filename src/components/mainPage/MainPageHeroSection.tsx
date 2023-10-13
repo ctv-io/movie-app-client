@@ -15,7 +15,7 @@ export default function HeroSection() {
 						<input
 							type="text"
 							id="mainName"
-							placeholder="Type here"
+							placeholder="Escreva seu nome"
 							className="input input-bordered w-full max-w-md"
 						/>
 					</label>
