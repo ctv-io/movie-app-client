@@ -15,8 +15,8 @@ const fakeData: string[] = [
 	'Elro',
 	'Xalone',
 ];
-
 const placeholderLink: string = 'http://www.tmm.com/room?id=batata123';
+const unanimityMode: boolean = false;
 
 export default function Room() {
 	return (
@@ -24,7 +24,7 @@ export default function Room() {
 			<div className="flex h-[80dvh] flex-col items-start justify-start gap-3">
 				<SimpleTitle />
 				<ShareLinkInput placeholderLink={placeholderLink} />
-				<ToggleButton />
+				<ToggleButton unanimityMode={unanimityMode} />
 				<SessionButton isPlayers={!!fakeData.length} />
 				<SessionMenu players={fakeData} />
 			</div>
