@@ -21,7 +21,7 @@ const unanimityMode: boolean = false;
 export default function Room() {
 	return (
 		<GenericMainBackground>
-			<div className="flex h-[80dvh] flex-col items-start justify-start gap-3">
+			<div className="flex h-[80dvh] flex-col items-start justify-start gap-2">
 				<SimpleTitle />
 				<ShareLinkInput placeholderLink={placeholderLink} />
 				<ToggleButton unanimityMode={unanimityMode} />

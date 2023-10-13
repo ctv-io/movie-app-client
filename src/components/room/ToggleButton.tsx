@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 
 // Interfaces
 import IToggleButton from '@/interfaces/IToggleButton';
+import { FiInfo } from 'react-icons/fi';
 
 export default function ToggleButton({ unanimityMode }: IToggleButton) {
 	const unanimity = useRef(unanimityMode);
@@ -15,10 +16,10 @@ export default function ToggleButton({ unanimityMode }: IToggleButton) {
 	}
 
 	return (
-		<div className="form-control ">
+		<div className="form-control flex h-8 flex-row items-center justify-center">
 			<label
 				htmlFor="toggleUnanimity"
-				className="label flex cursor-pointer items-start justify-start gap-2"
+				className="label flex  cursor-pointer items-center justify-center gap-2"
 			>
 				<span className="label-text text-zinc-200">Modo Unanimidade</span>
 				<input
@@ -28,6 +29,12 @@ export default function ToggleButton({ unanimityMode }: IToggleButton) {
 					onChange={handleToggle}
 				/>
 			</label>
+			<div
+				className="tooltip tooltip-right"
+				data-tip="O Modo Unanimidade faz com que o filme escolhido precise, obrigatoriamente, ser aceito por todos os jogadores da sala."
+			>
+				<FiInfo size="1.2em" />
+			</div>
 		</div>
 	);
 }
