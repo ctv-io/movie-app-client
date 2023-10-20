@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleTitle from './SimpleTitle';
+import SimpleTitle from '../SimpleTitle';
 
 export default function HeroSection() {
 	return (
@@ -15,7 +15,7 @@ export default function HeroSection() {
 						<input
 							type="text"
 							id="mainName"
-							placeholder="Type here"
+							placeholder="Escreva seu nome"
 							className="input input-bordered w-full max-w-md"
 						/>
 					</label>

@@ -33,7 +33,7 @@ export default function SessionMenu({ players }: ISessionMenu) {
 			<ul className="h-full w-full justify-between">
 				{players.map((item) => (
 					<div
-						className="flex items-center justify-between  border-b border-zinc-700 p-3"
+						className="flex items-center justify-between  border-b border-zinc-700 p-3 text-zinc-200"
 						key={item}
 					>
 						<li>{item}</li>

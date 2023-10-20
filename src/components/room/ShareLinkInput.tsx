@@ -7,13 +7,13 @@ import ShareLinkButton from './ShareLinkButton';
 export default function ShareLinkInput({ placeholderLink }: IShareLinkInput) {
 	return (
 		<label htmlFor="shareLink" className="w-full pt-10">
-			<span>Link Para sua sala</span>
+			<span className="text-zinc-200">Link Para sua sala</span>
 			<div className="join w-full">
 				<input
-					className="input input-bordered join-item w-full disabled:border-zinc-700 disabled:bg-zinc-900 disabled:placeholder:text-zinc-200"
+					className="input input-bordered join-item w-full cursor-pointer select-text border-zinc-700 bg-zinc-900 placeholder:text-zinc-200 focus:outline-none"
 					id="shareLink"
-					disabled
-					placeholder={placeholderLink}
+					value={placeholderLink}
+					readOnly
 				/>
 				<ShareLinkButton placeholderLink={placeholderLink} />
 			</div>

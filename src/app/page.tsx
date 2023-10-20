@@ -1,7 +1,7 @@
 'use client';
 
 import GenericMainBackground from '@/components/GenericMainBackground';
-import MainPageHeroSection from '@/components/MainPageHeroSection';
+import MainPageHeroSection from '@/components/mainPage/MainPageHeroSection';
 
 import SocketContext from '@/utils/contexts/SocketContext/Context';
 import { useContext } from 'react';
