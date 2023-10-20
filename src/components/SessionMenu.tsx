@@ -10,6 +10,24 @@ export default function SessionMenu({ players }: ISessionMenu) {
 			</div>
 		);
 	}
+	const adm: boolean = true;
+	if (adm) {
+		return (
+			<div className=" rounded-box flex w-full grow items-center justify-center overflow-auto border border-zinc-700 bg-zinc-900">
+				<ul className="h-full w-full justify-between">
+					{players.map((item) => (
+						<div
+							className="flex items-center justify-between  border-b border-zinc-700 p-3"
+							key={item}
+						>
+							<li>{item}</li>
+							<FiXCircle />
+						</div>
+					))}
+				</ul>
+			</div>
+		);
+	}
 	return (
 		<div className=" rounded-box flex w-full grow items-center justify-center overflow-auto border border-zinc-700 bg-zinc-900">
 			<ul className="h-full w-full justify-between">
@@ -19,7 +37,6 @@ export default function SessionMenu({ players }: ISessionMenu) {
 						key={item}
 					>
 						<li>{item}</li>
-						<FiXCircle />
 					</div>
 				))}
 			</ul>
