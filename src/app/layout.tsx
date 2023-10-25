@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import SocketContextProviderComponent from '@/utils/contexts/SocketContext/Provider';
+import PointerBoard from '@/components/PointerBoard';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,10 +17,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }): React.ReactNode {
 	return (
-		<html lang="en">
-			<SocketContextProviderComponent>
-				<body className={inter.className}>{children}</body>
-			</SocketContextProviderComponent>
+		<html lang="pt-BR" className="overflow-hidden">
+			<body className={inter.className}>
+				<SocketContextProviderComponent>
+					<PointerBoard />
+					{children}
+				</SocketContextProviderComponent>
+			</body>
 		</html>
 	);
 }
